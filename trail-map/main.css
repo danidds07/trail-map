@@ -1,0 +1,142 @@
+/* CSS - main.css */
+* {
+    font-family: sans-serif;
+}
+
+html {
+    height: -webkit-fill-available;
+    max-height: -webkit-fill-available;
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */    
+    margin: 0;
+}
+
+dialog {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    border: 0;
+    box-shadow:  0 0 2rem grey;
+}
+dialog::backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+button:hover {
+    cursor: pointer;
+}
+input[type=number] {
+    text-align: right;
+}
+select:invalid, input:invalid {
+    background-color: pink;
+}
+tr, th, td, input, textarea, select, button {
+    padding: 0.2rem;
+    font-size: 1rem;
+}
+tr:has(td):hover {
+    background-color: lightgrey;
+}
+
+/* id Selectors */
+/* app.html */
+
+#mapa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(199, 198, 188);
+    z-index: 0;
+}
+
+.tabsMenu {
+    background-color: darkgrey;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    padding-bottom: 0;
+}
+
+#userMenu {
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 2rem 2rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+#userMenu > span {
+    color: white;
+    text-shadow: 1px 1px grey;
+}
+#userButton > img {
+    height: 1rem;
+}
+#userButton {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1rem;
+    border-radius: 2rem 2rem;
+}
+.tabsMenu > button {
+    background-color: lightgrey;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 0;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    font-size: 1rem;
+}
+.tabsMenu > button:focus {
+    background-color: grey;
+    color: white;
+}
+
+#player {
+    font-size: 2rem;
+}
+
+#bMenu {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1rem;
+    border-radius: 2rem 2rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+#menu {
+    padding: 0.5rem;
+    padding-top: 3.5rem;
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+#bEncerra {
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 2rem 2rem;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+}

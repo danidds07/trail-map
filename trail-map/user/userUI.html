@@ -1,0 +1,113 @@
+<form id="login">
+    <button type="button" style="float:right;position:sticky;top:0;">&#128473;</button>
+    <h2 style="margin:0;">Login</h2>
+    <hr>
+    E-mail<br>
+    <input name="email" type="email" placeholder="E-mail da conta" required>
+    <br><br>
+    Senha<br>
+    <input name="password" type="password" placeholder="Senha da conta" required>
+    <br><br>
+    <button type="submit">&#10004; Entrar</button>
+    <br><hr>
+    <button type="button">Registrar nova conta</button>
+    <br><br>
+    <button type="button">Restaurar senha de conta</button>
+</form>
+
+<div id="logout">
+    <button type="button" style="float:right;position:sticky;top:0;">&#128473;</button>
+    <h2 style="margin:0;">Logout</h2>
+    <hr>
+    
+    <div style="text-align:center;">
+        <img width="50%" alt="" src="">
+        <div></div>
+    </div>
+    <hr>
+    <button type="button">&#10008; Encerrar sessão</button>
+    <br><br>
+    <button type="button">&#128221; Editar perfil</button>
+</div>
+
+<form id="newUser">
+    <button type="button" style="float:right;position:sticky;top:0;">&#128473;</button>
+    <h2 style="margin:0;">Nova conta</h2>
+    <hr>
+    E-mail<br>
+    <input name="email" type="email" placeholder="E-mail da conta" required>
+    <br><br>
+    Senha<br>
+    <input name="password1" type="password" placeholder="Senha da conta" required>
+    <br><br>
+    Confirmação da Senha<br>
+    <input name="password2" type="password" placeholder="Confirmação da senha" required>
+    <br><br>
+    <button type="submit">&#10004; Ok</button>
+    <button type="button">&#10008; Cancelar</button>
+</form>
+
+<form id="editUser">
+    <button type="button" style="float:right;position:sticky;top:0;">&#128473;</button>
+    <h2 style="margin:0;">Perfil do usuário</h2>
+    <hr>
+    Nome do usuário<br>
+    <input id="displayName" name="displayName" type="text" placeholder="Nome do usuário" required>
+    <br><br>
+    Ícone do Usuário<br>
+    <button type="button" style="width:50%;">
+        <img id="photoURL" width="100%" height="100%" alt="" src="">
+    </button>
+    <br><br>
+    <button type="submit">&#10004; Ok</button>
+    <button type="button">&#10008; Cancelar</button>
+    <br><hr>
+    <button type="button">Alterar e-mail</button>
+    <br><br>
+    <button type="button">Alterar senha</button>    
+    <br><br>
+    <button type="button">Encerrar a conta do usuário</button>    
+</form>
+
+<!-- emojicon-->
+<form id="emojicon">
+    <button type="button" style="float:right;position:sticky;top:0;">&#128473;</button>
+    <h2>Selecione um Ícone</h2>
+    <hr>
+    <div style="display: inline-block">
+        <table>
+            <tr style="font-size:2rem;">
+                <th>&#x1F44A;
+                <th>&#x1F44A;&#x1F3FB;
+                <th>&#x1F44A;&#x1F3FC;
+                <th>&#x1F44A;&#x1F3FD;
+                <th>&#x1F44A;&#x1F3FE;
+                <th>&#x1F44A;&#x1F3FF;
+            </tr>
+            <tr style="font-size:2rem;">
+                <th><input name="skinTone" type="radio" value="0" checked>
+                <th><input name="skinTone" type="radio" value="1">
+                <th><input name="skinTone" type="radio" value="2">
+                <th><input name="skinTone" type="radio" value="3">
+                <th><input name="skinTone" type="radio" value="4">
+                <th><input name="skinTone" type="radio" value="5">
+            </tr>
+        </table>
+    </div>
+    &nbsp;&nbsp;
+    <div style="display: inline-block">
+        <table>
+            <tr style="font-size:2rem;">
+                <th style="color:purple;"><small>&#9906;</small>
+                <th style="color:red;"><big>&#9792;</big>
+                <th style="color:blue;"><big>&#9794;</big>
+            </tr>
+            <tr style="font-size:2rem;">
+                <th><input name="gender" type="radio" value="0" checked> 
+                <th><input name="gender" type="radio" value="1"> 
+                <th><input name="gender" type="radio" value="2"> 
+            </tr>
+        </table>
+    </div>
+    <div></div>
+</form>

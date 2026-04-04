@@ -54,11 +54,14 @@ It allows users to visualize and explore trails through a simple and intuitive i
 
 <pre>
 trail-map/
-│── src/
+│── app/
 │── assets/
 │── docs/
-│── presentation/
-│── README.md
+│── lib/
+│── user/
+│── index.html
+│── main.css
+│── main.js
 </pre>
 
 ---
@@ -67,6 +70,11 @@ trail-map/
 
 <p>
 This project was developed as part of a final academic assignment (TCC), including documentation and presentation materials.
+</p>
+
+<p>
+📄 <strong>Full TCC:</strong><br>
+🔗 https://docs.google.com/document/d/1M1xf7TWg6O3uCA8R9Qm7mECjuBNUaH_jo0MSsFUL4WE/edit?usp=sharing
 </p>
 
 ---
